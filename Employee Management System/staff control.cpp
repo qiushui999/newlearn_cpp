@@ -40,7 +40,6 @@ int main()
                 worktest.del_emp();
      		    break;
      	    case 4: //修改职工
-<<<<<<< HEAD
                 worktest.modify_emp();
      		    break;
          	case 5: //查找职工
@@ -51,14 +50,6 @@ int main()
      		    break;
      	    case 7: //清空文件
                 worktest.cleanall();
-=======
-     		    break;
-         	case 5: //查找职工
-     		    break;
-     	    case 6: //排序职工
-     		    break;
-     	    case 7: //清空文件
->>>>>>> 56af272e7968aa4aadcd7dca3cca9dfcc0b051eb
      		    break;
      	    default:
                  system("cls");
