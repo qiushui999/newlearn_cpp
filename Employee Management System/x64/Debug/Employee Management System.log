@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 ﻿  staff control.cpp
+=======
+﻿  workmangager.cpp
+F:\code\newlearn_cpp\Employee Management System\workmangager.cpp(290): warning C4715: “WorkerManager::id_exist”: 不是所有的控件路径都返回值
+>>>>>>> 56af272e7968aa4aadcd7dca3cca9dfcc0b051eb
   Employee Management System.vcxproj -> F:\code\newlearn_cpp\Employee Management System\x64\Debug\Employee Management System.exe

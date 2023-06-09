@@ -127,7 +127,11 @@ void WorkerManager::add_emp()
 		{
 			int id;//职工编号
 			string name;//名字
+<<<<<<< HEAD
 			int bmselect;//部门选择
+=======
+			int bmselcet;//部门选择
+>>>>>>> 56af272e7968aa4aadcd7dca3cca9dfcc0b051eb
 			cout << "请输入第" << i + 1 << "个新职工编号" << endl;
 			cin >> id;
 			cout << "请输入第" << i + 1 << "个新职工名字" << endl;
@@ -136,9 +140,15 @@ void WorkerManager::add_emp()
 			cout << "1.普通员工" << endl;
 			cout << "2.经理" << endl;
 			cout << "3.老板" << endl;
+<<<<<<< HEAD
 			cin >> bmselect;
 			Worker* worker = NULL;
 			switch (bmselect)
+=======
+			cin >> bmselcet;
+			Worker* worker = NULL;
+			switch (bmselcet)
+>>>>>>> 56af272e7968aa4aadcd7dca3cca9dfcc0b051eb
 			{
 			case 1:
 				worker = new Employer(id, name, 1);
@@ -268,19 +278,28 @@ void WorkerManager::del_emp()
 	system("cls");
 }
 //判断员工是否存在
+<<<<<<< HEAD
 //存在返回数组号，不存在返回-1
+=======
+//存在返回编号，不存在返回-1
+>>>>>>> 56af272e7968aa4aadcd7dca3cca9dfcc0b051eb
 int WorkerManager::id_exist(int id)
 {
 	int index = -1;
 	for (int i = 0; i < this->m_empnum; i++)
 	{
+<<<<<<< HEAD
 		if (this->m_emparry[i]->m_id==id)
+=======
+		if (this->m_emparry[i]->m_id== id)
+>>>>>>> 56af272e7968aa4aadcd7dca3cca9dfcc0b051eb
 		{
 			//cout << "该职工工存在，请继续操作" << endl;
 
 			index = i;
 			break;
 		}
+<<<<<<< HEAD
 	}
 	return index;
 }
@@ -505,12 +524,21 @@ void WorkerManager::cleanall()
 	system("pause");
 	system("cls");
 
+=======
+		else
+		{
+			//cout << "该职工不存在" << endl;
+		}
+		return index;
+	}
+>>>>>>> 56af272e7968aa4aadcd7dca3cca9dfcc0b051eb
 }
 //析构代码
 WorkerManager::~WorkerManager()
 {
 	if (this->m_emparry != NULL)
 	{
+<<<<<<< HEAD
 		for (int i = 0; i < this->m_empnum; i++)
 		{
 			if (this->m_emparry[i] != NULL)
@@ -518,6 +546,8 @@ WorkerManager::~WorkerManager()
 				delete this->m_emparry[i];//数组中每个元素
 			}
 		}
+=======
+>>>>>>> 56af272e7968aa4aadcd7dca3cca9dfcc0b051eb
 		delete[]this->m_emparry;
 		this->m_emparry = NULL;
 	}

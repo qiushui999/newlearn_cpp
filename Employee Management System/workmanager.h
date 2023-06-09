@@ -42,6 +42,7 @@ public:
     //判断员工是否存在
     //存在返回编号，不存在返回-1
     int id_exist(int id);
+<<<<<<< HEAD
     //4.修改职工
     void modify_emp();
     //5.查找职工
@@ -51,6 +52,8 @@ public:
     //7.清空数据
     void cleanall();
 
+=======
+>>>>>>> 56af272e7968aa4aadcd7dca3cca9dfcc0b051eb
 
 
 
